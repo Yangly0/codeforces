@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 ## 题目
 
@@ -40,6 +37,9 @@ corner case：
 2. 如果全为 0，或者一个负数和 n-1 个 0，输出 0。
 
 */
+
+#include <bits/stdc++.h>
+using namespace std;
 
 void solve() {
     int n;
