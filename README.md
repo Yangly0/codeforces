@@ -1,6 +1,6 @@
 # codeforces
 
-学习 codeforces！
+学习 [Codeforces](https://codeforces.com/)！
 
 ## 用法
 
