@@ -69,7 +69,7 @@ void solve() {
         int n;
         cin >> n;
 
-        if (n == 1 || n == 3 || n == 2 || n == 5 || n == 7 || n == 1) {
+        if (n == 1 || n == 3 || n == 2 || n == 5 || n == 7 || n == 11) {
             cout << -1 << endl;
         } else {
             cout << n / 4 - n % 2 << endl;
