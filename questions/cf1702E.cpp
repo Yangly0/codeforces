@@ -15,7 +15,7 @@ https://codeforces.com/problemset/problem/1702/E
 第一组：(1,4), (3,2)。
 第二组：(1,3), (4,2)。
 
-## 示例
+## 样例
 
 输入
 6

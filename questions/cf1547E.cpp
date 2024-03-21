@@ -12,7 +12,7 @@ https://codeforces.com/problemset/problem/1547/E
 
 输出 1~n 每个位置的温度。
 
-## 示例
+## 样例
 
 输入
 5
