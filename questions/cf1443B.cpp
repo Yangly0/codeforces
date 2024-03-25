@@ -30,7 +30,10 @@ https://codeforces.com/problemset/problem/1443/B
 
 ## 思路
 
-
+贪心。
+如果没有第二种操作，那么答案就是 a * 连续 1 的段数。
+第二种操作可以把两段连续 1 之间的 0 变成 1，这样两段 1 就合并成一段 1，可以减少一个 a 的花费。
+如果两段连续 1 之间的 0 的个数 * b < a，那么把 0 变成 1 是更优的，否则不变更优。
 */
 
 #include <bits/stdc++.h>
@@ -39,10 +42,36 @@ using namespace std;
 void solve() {
     int T, a, b;
     string str;
+
     cin >> T;
     while (T-- > 0) {
         cin >> a >> b;
         cin >> str;
+
+        int cnt = 0;
+        for (char ch : str) {
+            if (ch == '1') {
+                ++cnt;
+            }
+        }
+
+        if (cnt == 0) {
+            cout << 0 << endl;
+            continue;
+        }
+
+        int ans = a;
+        for (int i = 0, n = str.size(); i < n;) {
+            int st = i;
+            char v = str[st];
+
+            for (; i < n && str[i] == v; i++) {
+            }
+            if (v == '0' && st > 0 && i < n) {
+                ans += min(b * (i - st), a);
+            }
+        }
+        cout << ans << endl;
     }
 }
 
