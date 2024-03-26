@@ -67,6 +67,7 @@ void solve() {
 
             for (; i < n && str[i] == v; i++) {
             }
+
             if (v == '0' && st > 0 && i < n) {
                 ans += min(b * (i - st), a);
             }
