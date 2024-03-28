@@ -132,7 +132,7 @@ void solve() {
 }
 
 int main(int args, char *argv[]) {
-#if 1
+#if 0
     freopen("input.txt", "r", stdin);
 #endif
 
