@@ -1,1 +1,0 @@
-g++ -o main -std=c++14 $1 && ./main

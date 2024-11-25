@@ -96,7 +96,7 @@ void solve() {
 }
 
 int main(int args, char *argv[]) {
-#if 0
+#ifdef DEBUG
     freopen("input.txt", "r", stdin);
 #endif
 
