@@ -1,0 +1,1 @@
+g++ -o main_test -std=c++17 -D DEBUG $1 && ./main_test
